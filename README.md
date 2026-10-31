@@ -1,8 +1,8 @@
-&#x20;OrangeHRM Employee Management RPA
+\# OrangeHRM Employee Management RPA
 
 
 
-&#x20;Project Overview
+\## Project Overview
 
 
 
@@ -14,39 +14,39 @@ The application automates employee management tasks in OrangeHRM through a simpl
 
 
 
-&#x20;Features
+\## Features
 
 
 
-\- Flask-based web dashboard.
+\- Flask-based web dashboard
 
-\- Secure input of OrangeHRM login credentials.
+\- Login using OrangeHRM credentials
 
-\- Automated login using Selenium WebDriver.
+\- Automated login using Selenium WebDriver
 
-\- Navigation to the PIM module.
+\- Navigation to the PIM module
 
-\- Employee search and verification.
+\- Employee search and verification
 
-\- Automated employee creation.
+\- Automated employee creation
 
-\- Employee list extraction.
+\- Employee list extraction
 
-\- Pagination handling.
+\- Pagination handling
 
-\- CSV export of employee records.
+\- CSV export of employee records
 
-\- Explicit waits and exception handling.
+\- Explicit waits and exception handling
 
-\- Automation logging.
+\- Automation logging
 
-\- Automated logout.
+\- Automated logout
 
-\- Execution status displayed on the dashboard.
+\- Execution status displayed on the dashboard
 
 
 
-Technologies Used
+\## Technologies Used
 
 
 
@@ -70,11 +70,11 @@ Technologies Used
 
 
 
-&#x20;Project Structure
+\## Project Structure
 
 
 
-
+```text
 
 OrangeHRM-RPA/
 
@@ -104,51 +104,51 @@ OrangeHRM-RPA/
 
 &#x20;   └── screenshots/
 
+```
 
 
 
-
-&#x20;Installation and Setup
-
-
-
-1\. Clone the repository
+\## Installation and Setup
 
 
 
-bash
+\### 1. Clone the repository
+
+
+
+```bash
 
 git clone https://github.com/BattenaMaheswari/OrangeHRM-RPA.git
 
+```
 
 
 
-
-&#x20;2. Navigate to the project folder
-
+\### 2. Navigate to the project folder
 
 
-`
+
+```bash
 
 cd OrangeHRM-RPA
 
+```
 
 
 
-
-&#x20;3. Create a virtual environment
-
+\### 3. Create a virtual environment
 
 
 
+```bash
 
 python -m venv venv
 
+```
 
 
 
-
-&#x20;4. Activate the virtual environment
+\### 4. Activate the virtual environment
 
 
 
@@ -156,11 +156,11 @@ Windows:
 
 
 
-
+```bash
 
 venv\\Scripts\\activate
 
-
+```
 
 
 
@@ -168,15 +168,15 @@ venv\\Scripts\\activate
 
 
 
-
+```bash
 
 pip install -r requirements.txt
 
+```
 
 
 
-
-Run the Application
+\## Run the Application
 
 
 
@@ -184,11 +184,11 @@ Start the Flask application:
 
 
 
-
+```bash
 
 python app.py
 
-
+```
 
 
 
@@ -196,11 +196,15 @@ Open your browser and visit:
 
 
 
+```text
+
 http://127.0.0.1:5000
 
+```
 
 
-&#x20;Automation Workflow
+
+\## Automation Workflow
 
 
 
@@ -234,7 +238,7 @@ http://127.0.0.1:5000
 
 
 
-Output
+\## Output
 
 
 
@@ -242,19 +246,19 @@ The application displays:
 
 
 
-\- Automation execution status.
+\- Automation execution status
 
-\- Employee details.
+\- Employee details
 
-\- Success or failure message.
+\- Success or failure message
 
-\- Total exported employee records.
+\- Total exported employee records
 
-\- CSV export file location.
+\- CSV export file location
 
 
 
-Error Handling and Logging
+\## Error Handling and Logging
 
 
 
@@ -262,11 +266,19 @@ The automation uses explicit waits, exception handling, and logging to handle br
 
 
 
-&#x20;GitHub Repository
+\## GitHub Repository
 
 
 
-https://github.com/BattenaMaheswari/OrangeHRM-RPA
+\[OrangeHRM-RPA](https://github.com/BattenaMaheswari/OrangeHRM-RPA)
+
+
+
+\## Author
+
+
+
+\*\*Battena Maheswari\*\*
 
 
 
