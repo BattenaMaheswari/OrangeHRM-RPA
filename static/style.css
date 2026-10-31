@@ -1,0 +1,231 @@
+﻿/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 35px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: bisque;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Main dashboard */
+.container {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 16px;
+    border-top: 6px  orange;
+    box-shadow: 0 8px 28px rgba(30, 64, 175, 0.12);
+}
+
+/* Header */
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    border-radius: 14px;
+    background:  orange;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 8px;
+    color:  orange;
+    font-size: 27px;
+}
+
+.subtitle {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Form section */
+.form-section {
+    margin-top: 25px;
+    padding: 22px;
+    background: #f8fafc;
+    border: 1px solid #dbeafe;
+    border-left: 4px  orange;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 6px;
+    color:  orange;
+    font-size: 19px;
+}
+
+.section-description {
+    margin-bottom: 20px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* Form fields */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input {
+    display: block;
+    width: 100%;
+    min-height: 46px;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background: white;
+    color: #1e293b;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color:  orange;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Submit button */
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 50px;
+    margin-top: 25px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    background: beige;
+    color: black;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.submit-button:hover {
+    background:  orange;
+    transform: translateY(-1px);
+}
+
+/* Result section */
+.result-card {
+    margin-top: 28px;
+    padding: 24px;
+    border: 1px solid #bfdbfe;
+    border-top: 4px  orange;
+    border-radius: 12px;
+    background: beige;
+    overflow-wrap: anywhere;
+}
+
+.result-card h2 {
+    margin-bottom: 18px;
+}
+
+.status-line,
+.message,
+.export-info {
+    margin-top: 12px;
+}
+
+.status {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* Employee details */
+.employee-details {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid #bfdbfe;
+}
+
+.employee-details h3 {
+    margin-bottom: 10px;
+    color:  orange;
+    font-size: 16px;
+}
+
+.employee-details p {
+    margin-top: 8px;
+}
+
+/* Footer */
+.page-footer {
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 18px 10px;
+    }
+
+    .container {
+        padding: 22px 16px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .form-section {
+        padding: 17px 13px;
+    }
+
+    .result-card {
+        padding: 18px 14px;
+    }
+}

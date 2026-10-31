@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OrangeHRM RPA Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <main class="container">
+
+        <header class="page-header">
+            <div class="logo">HR</div>
+            <h1>OrangeHRM RPA Dashboard</h1>
+            <p class="subtitle">Dashboard-Driven Employee Automation</p>
+        </header>
+
+        <form action="{{ url_for('run_automation') }}" method="POST">
+
+            <section class="form-section">
+                <h2>OrangeHRM Login Details</h2>
+                <p class="section-description">
+                    Enter your OrangeHRM login credentials.
+                </p>
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter username"
+                        value="Admin"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter password"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2>Employee Details</h2>
+                <p class="section-description">
+                    Enter the details of the employee you want to add.
+                </p>
+
+                <div class="form-group">
+                    <label for="first_name">First Name</label>
+                    <input
+                        type="text"
+                        id="first_name"
+                        name="first_name"
+                        placeholder="Enter first name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="last_name">Last Name</label>
+                    <input
+                        type="text"
+                        id="last_name"
+                        name="last_name"
+                        placeholder="Enter last name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="employee_id">Employee ID</label>
+                    <input
+                        type="text"
+                        id="employee_id"
+                        name="employee_id"
+                        placeholder="Enter employee ID"
+                        required
+                    >
+                </div>
+            </section>
+
+            <button type="submit" class="submit-button">
+                Run Automation
+                <span aria-hidden="true">&rarr;</span>
+            </button>
+        </form>
+
+        {% if result %}
+        <section class="result-card">
+            <h2>Automation Result</h2>
+
+            <p class="status-line">
+                <strong>Status:</strong>
+
+                {% if result.success %}
+                    <span class="status success">Success</span>
+                {% else %}
+                    <span class="status error">Failed</span>
+                {% endif %}
+            </p>
+
+            <p class="message">
+                <strong>Message:</strong>
+                {{ result.message }}
+            </p>
+
+            {% if result.employee %}
+            <div class="employee-details">
+                <h3>Employee Details</h3>
+
+                <p>
+                    <strong>First Name:</strong>
+                    {{ result.employee.first_name }}
+                </p>
+
+                <p>
+                    <strong>Last Name:</strong>
+                    {{ result.employee.last_name }}
+                </p>
+
+                <p>
+                    <strong>Employee ID:</strong>
+                    {{ result.employee.employee_id }}
+                </p>
+            </div>
+            {% endif %}
+
+            {% if result.total_records is defined %}
+            <p class="export-info">
+                <strong>Total Records Exported:</strong>
+                {{ result.total_records }}
+            </p>
+            {% endif %}
+
+            {% if result.csv_file %}
+            <p class="export-info">
+                <strong>CSV File:</strong>
+                <span class="file-path">{{ result.csv_file }}</span>
+            </p>
+            {% endif %}
+        </section>
+        {% endif %}
+
+        <footer class="page-footer">
+            OrangeHRM RPA · Employee Automation System
+        </footer>
+
+    </main>
+</body>
+</html>
