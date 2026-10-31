@@ -1,8 +1,8 @@
-\# OrangeHRM Employee Management RPA
+&#x20;**OrangeHRM Employee Management RPA**
 
 
 
-\## Project Overview
+&#x20;*Project Overview*
 
 
 
@@ -14,7 +14,7 @@ The application automates employee management tasks in OrangeHRM through a simpl
 
 
 
-\## Features
+&#x20;Features
 
 
 
@@ -46,7 +46,7 @@ The application automates employee management tasks in OrangeHRM through a simpl
 
 
 
-\## Technologies Used
+Technologies Used
 
 
 
@@ -70,7 +70,7 @@ The application automates employee management tasks in OrangeHRM through a simpl
 
 
 
-\## Project Structure
+&#x20;Project Structure
 
 
 
@@ -108,7 +108,7 @@ OrangeHRM-RPA/
 
 
 
-\## Installation and Setup
+Installation and Setup
 
 
 
@@ -124,7 +124,7 @@ git clone https://github.com/BattenaMaheswari/OrangeHRM-RPA.git
 
 
 
-\### 2. Navigate to the project folder
+&#x20;2. Navigate to the project folder
 
 
 
@@ -136,7 +136,7 @@ cd OrangeHRM-RPA
 
 
 
-\### 3. Create a virtual environment
+&#x20;3. Create a virtual environment
 
 
 
@@ -148,7 +148,7 @@ python -m venv venv
 
 
 
-\### 4. Activate the virtual environment
+&#x20;4. Activate the virtual environment
 
 
 
@@ -164,7 +164,7 @@ venv\\Scripts\\activate
 
 
 
-\### 5. Install dependencies
+&#x20;5. Install dependencies
 
 
 
@@ -204,7 +204,7 @@ http://127.0.0.1:5000
 
 
 
-\## Automation Workflow
+Automation Workflow
 
 
 
@@ -238,7 +238,7 @@ http://127.0.0.1:5000
 
 
 
-\## Output
+&#x20;Output
 
 
 
@@ -258,7 +258,7 @@ The application displays:
 
 
 
-\## Error Handling and Logging
+Error Handling and Logging
 
 
 
@@ -266,19 +266,11 @@ The automation uses explicit waits, exception handling, and logging to handle br
 
 
 
-\## GitHub Repository
+**GitHub Repository**
 
 
 
 \[OrangeHRM-RPA](https://github.com/BattenaMaheswari/OrangeHRM-RPA)
-
-
-
-\## Author
-
-
-
-\*\*Battena Maheswari\*\*
 
 
 
